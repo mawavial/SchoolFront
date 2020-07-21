@@ -1,1 +1,3 @@
 # school
+
+Simple crud app
