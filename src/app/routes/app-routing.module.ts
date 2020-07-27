@@ -7,17 +7,20 @@ import { DashboardComponent } from '../components/dashboard/dashboard.component'
 import { SchoolsComponent } from '../components/schools/schools.component';
 import { SclassesComponent } from '../components/sclasses/sclasses.component';
 import { StudentsComponent } from '../components/students/students.component';
-
+import { MainComponent } from '../components/main/main.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/schools', pathMatch: 'full' },
+  // { path: '', redirectTo: '/main', pathMatch: 'full' },
+  // { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'heroes', component: HeroesComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'schools', component: SchoolsComponent },
   { path: 'sclasses', component: SclassesComponent },
-  { path: 'students', component: StudentsComponent }
+  { path: 'students', component: StudentsComponent },
+  { path: 'main', component: MainComponent }
 ];
 
 @NgModule({

@@ -9,17 +9,12 @@ import { Hero } from '../../interfaces/hero';
 import { MessageService } from '../messageService/message.service';
 
 const path = environment.apiEndpoint + 'Hero';  // URL to web api
-// const httpOptions = {
-//   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-// };
-// const headers = new HttpHeaders().set('Accept', 'application/json')
+
 const headers = new HttpHeaders({
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 });
 let options = { headers: headers };
-
-
 
 @Injectable({
   providedIn: 'root'

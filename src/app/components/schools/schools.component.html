@@ -1,1 +1,39 @@
-<p>schools works!</p>
+<div class="container-fluid">
+    <div class="card w-100">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-3" ></div>
+                <div class="col-6 blockquote text-center"><p>Listagem de Escolas</p></div>
+                <div class="col-3">
+                    <button class="btn btn-secondary float-right"><i class="fas fa-plus"></i>  Adicionar Escola</button></div>
+            </div>
+            
+            <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Alunos</th>
+                            <th scope="col">Turmas</th>
+                            <th scope="col">Nota Geral</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let school of schools">
+                            <th scope="row">{{ school.id }}</th>
+                            <td>{{ school.name }}</td>
+                            <td>{{ school.students | number }}</td>
+                            <td>{{ school.classes | number }}</td>
+                            <td>{{ school.grade | number }}</td>
+                            <td><button class="btn btn-secondary" (click)="editModal(school)" ><i class="fas fa-pencil-alt"></i></button></td>
+                            <td><button class="btn btn-secondary" (click)="deleteSchool(school)"><i class="fas fa-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
