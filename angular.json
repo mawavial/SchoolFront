@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "schoolDash"
+    }
+  },
+  "defaultProject": "schoolDash",
+  "cli": {
+    "analytics": false
+  }
 }
