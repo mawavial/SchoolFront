@@ -6,14 +6,9 @@ import { HttpClientModule }    from '@angular/common/http';
 
 //personal components
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './components/heroes/heroes.component';
 import { StudentsComponent } from './components/students/students.component';
 import { SchoolsComponent } from './components/schools/schools.component';
 import { SclassesComponent } from './components/sclasses/sclasses.component';
-import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
-import { MessagesComponent } from './components/messages/messages.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { HeroSearchComponent } from './components/hero-search/hero-search.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MainComponent } from './components/main/main.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -38,14 +33,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
     StudentsComponent,
     SchoolsComponent,
     SclassesComponent,
-    HeroDetailComponent,
-    MessagesComponent,
-    DashboardComponent,
-    HeroSearchComponent,
     ToolbarComponent,
     MainComponent,
     SidebarComponent,
@@ -64,7 +54,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     MatCardModule,
     MatFormFieldModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

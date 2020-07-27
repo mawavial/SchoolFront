@@ -11,7 +11,7 @@ export class SchoolsComponent implements OnInit {
 
   schools: School[] = [];
   @Input() school: School;
-  
+  editItem : boolean = false;
  
 
   constructor(private schoolService: SchoolService ) { }
@@ -46,7 +46,8 @@ export class SchoolsComponent implements OnInit {
       });
   }
   editModal(school: School): void {
-    
+    this.editItem = !this.editItem
+    console.log('%c⧭', 'color: #807160', this.editItem);
     console.log('%c⧭', 'color: #731d1d', school);
   }
 
