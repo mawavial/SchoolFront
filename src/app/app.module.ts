@@ -17,19 +17,6 @@ import { SchoolModalComponent } from './components/school-modal/school-modal.com
 import { AppRoutingModule } from './routes/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//angular material
-import { MatSliderModule } from '@angular/material/slider';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatSidenavModule} from '@angular/material/sidenav';
-
-import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
-
-//bootstrap
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,14 +33,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    MatSliderModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSidenavModule,
-    NgbModule,
-    MatCardModule,
-    MatFormFieldModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

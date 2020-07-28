@@ -45,11 +45,6 @@ export class SchoolsComponent implements OnInit {
         this.schools.push(school);
       });
   }
-  editModal(school: School): void {
-    this.editItem = !this.editItem
-    console.log('%c⧭', 'color: #807160', this.editItem);
-    console.log('%c⧭', 'color: #731d1d', school);
-  }
 
   deleteSchool(school: School): void {
     this.schools = this.schools.filter(s => s !== school);
